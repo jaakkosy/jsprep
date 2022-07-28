@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div id="error"></div>
+<form id="form" action="/" method="GET">
+  <div>
+    <label for="modelid">model ID</label>
+    <input id="modelid" name="modelid" type="text" required>
+  </div>
+  <div>
+    <label for="modelname">model name</label>
+    <input id="modelname" name="modelname" type="text" required>
+  </div>
+  <div>
+    <label for="modeldesc">model description</label>
+    <input id="modeldesc" name="modeldesc" type="text" required>
+  </div>
+  <div>
+    <label for="dryweight">dry weight</label>
+    <input id="dryweight" name="dryweight" type="number" required>
+  </div>
+  <div>
+    <label for="wetweight">wet weight</label>
+    <input id="wetweight" name="wetweight" type="number" required>
+  </div>
+  <div>
+    <label for="startdate">production started</label>
+    <input id="startdate" name="startdate" type="date" required>
+  </div>
+  <div>
+    <label for="compdate">production completed</label>
+    <input id="compdate" name="compdate" type="date" required>
+  </div>
+  <div>
+    <label for="examination">examination completed</label>
+    <input id="examination" name="examination" type="checkbox" required>
+  </div>
+  <br>
+  <br>
+  <button type="submit">Submit</button>
+  <input type="button" value="Show data" onclick="tulostus(data)">
+
+</form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+<!-- 
+
+malli id integer 
+nimike string
+mallikuvaus string
+kuivapaino integer 
+mårkäpaino integer 
+valmistuslinja int
+valmistusaloitettu date
+valmistuslopetetttu date
+viimeistely boolean
+
+
+
+
+--> 
